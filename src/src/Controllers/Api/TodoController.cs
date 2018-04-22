@@ -41,16 +41,22 @@ namespace src.Controllers.Api
             if (todo.todoId == 0)
             {
                 _context.Todo.Add(todo);
+
+                await _context.SaveChangesAsync();
+
+                return Json(new { success = true, message = "Add new data success." });
             }
             else
             {
                 _context.Update(todo);
+
+                await _context.SaveChangesAsync();
+
+                return Json(new { success = true, message = "Edit data success." });
             }
 
             
-            await _context.SaveChangesAsync();
 
-            return Json(new { success = true, message = "Submit success." });
         }
 
         // DELETE: api/Todo/5
