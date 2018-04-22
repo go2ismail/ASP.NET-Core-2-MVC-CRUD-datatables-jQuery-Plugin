@@ -21,12 +21,12 @@ Example implementation of ASP.NET Core 2 MVC CRUD datatables jQuery Plugin and E
 
 # Screenshots
 
-![demo1](src/src/wwwroot/readmeimages/demo1.PNG)
-![demo2](src/src/wwwroot/readmeimages/demo2.PNG)
-![demo3](src/src/wwwroot/readmeimages/demo3.PNG)
-![demo4](src/src/wwwroot/readmeimages/demo4.PNG)
+![demo1](src/src/wwwroot/readmeimages/demo1.png)
+![demo2](src/src/wwwroot/readmeimages/demo2.png)
+![demo3](src/src/wwwroot/readmeimages/demo3.png)
+![demo4](src/src/wwwroot/readmeimages/demo4.png)
 
 # Run Code First
 
-![efmigrations](src/src/wwwroot/readmeimages/efmigrations.PNG)
+![efmigrations](src/src/wwwroot/readmeimages/efmigrations.png)
 
