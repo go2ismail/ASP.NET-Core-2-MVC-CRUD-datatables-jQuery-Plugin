@@ -19,3 +19,14 @@ Example implementation of ASP.NET Core 2 MVC CRUD datatables jQuery Plugin and E
 - run the code first migration: using the package manager console, 'PM> update-database'
 - run the project by pressing the play button.
 
+# Screenshots
+
+![demo1](src/src/wwwroot/readmeimages/demo1.PNG)
+![demo2](src/src/wwwroot/readmeimages/demo2.PNG)
+![demo3](src/src/wwwroot/readmeimages/demo3.PNG)
+![demo4](src/src/wwwroot/readmeimages/demo4.PNG)
+
+# Run Code First
+
+![efmigrations](src/src/wwwroot/readmeimages/efmigrations.PNG)
+
