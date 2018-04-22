@@ -4,34 +4,39 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using src.Data;
 using src.Models;
 
 namespace src.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public IActionResult Todo()
         {
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult AddEditTodo(int id = 0)
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
+            if (id == 0)
+            {
+                return View(new Todo());
+            }
+            else
+            {
+                return View(_context.Todo.Where(x => x.todoId.Equals(id)).FirstOrDefault());
+            }
+            
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
 
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
