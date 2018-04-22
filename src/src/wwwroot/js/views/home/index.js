@@ -30,9 +30,9 @@ function ShowPopup(url) {
             popup = formDiv.dialog({
                 autoOpen: true,
                 resizeable: false,
-                title: 'Add or Edit Data',
+                width: 600,
                 height: 400,
-                width: 500,
+                title: 'Add or Edit Data',
                 close: function () {
                     popup.dialog('destroy').remove();
                 }

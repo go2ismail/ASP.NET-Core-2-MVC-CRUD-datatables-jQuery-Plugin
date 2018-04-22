@@ -4,15 +4,25 @@
 }
 
 <h2>Todo CRUD Operations</h2>
-<a class="btn btn-success" style="margin-bottom:10px" onclick="ShowPopup('@Url.Action("AddEditTodo","Home")')"><i class="fa fa-plus"></i> Add New Todo</a>
-<table id="gridTodo" name="gridTodo" class="table table-striped table-bordered" style="width:100%">
-    <thead>
-        <tr>
-            <th>Todo</th>
-            <th></th>
-        </tr>
-    </thead>
-</table>
+<div class="row">
+    <div class="col-md-10">
+        <a class="btn btn-success" style="margin-bottom:10px" onclick="ShowPopup('@Url.Action("AddEditTodo","Home")')"><i class="fa fa-plus"></i> Add New Todo</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10">
+        <table id="gridTodo" name="gridTodo" class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th class="col-md-10">Todo</th>
+                    <th class="col-md-2"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+
 @section Scripts{ 
     @await Html.PartialAsync("_ValidationScriptsPartial")
     <script src="~/js/views/home/index.js"></script>
