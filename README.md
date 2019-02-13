@@ -31,5 +31,5 @@ Example implementation of ASP.NET Core 2 MVC CRUD datatables jQuery Plugin and E
 ![efmigrations](src/src/wwwroot/readmeimages/efmigrations.png)
 
 # Supported by CodeRush.Co
-[CodeRush.CO] source code collections (https://coderush.co)
+[CodeRush.CO] source code collections (https://coderush.co). 50% Off All Products, Use Discount Code **GITHUB50**
 
